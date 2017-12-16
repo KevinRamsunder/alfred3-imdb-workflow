@@ -1,1 +1,0 @@
-this directory will store the thumbnails/images

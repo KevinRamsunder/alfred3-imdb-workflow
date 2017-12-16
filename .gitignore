@@ -1,3 +1,5 @@
 node_modules
 node.js
 .DS_Store
+images/*.jpg
+images/*.png
