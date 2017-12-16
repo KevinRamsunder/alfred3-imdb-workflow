@@ -2,14 +2,12 @@
 const alfy = require( 'alfy' );
 const https = require( 'https' );
 
-// imdb api endpoint
-const base  = 'https://v2.sg.media-imdb.com/suggests/';
-
 // user input to alfred
 const input = alfy.input.replace( / /g, '_' );
 
-// construct http endpoint
-const endpoint = `https://v2.sg.media-imdb.com/suggests/${ input.charAt( 0 ) }/${ input }.json`;
+// construct imdb api endpoint
+const base  = 'https://v2.sg.media-imdb.com/suggests';
+const endpoint = `${ base }/${ input.charAt( 0 ) }/${ input }.json`;
 
 // make request
 https.get( endpoint, ( res ) => {
@@ -32,6 +30,7 @@ https.get( endpoint, ( res ) => {
         return {
           title: d.l,
           subtitle: d.q,
+          arg: getURL( d.id ),
         };
       } );
     }
@@ -41,9 +40,24 @@ https.get( endpoint, ( res ) => {
   } );
 } );
 
+// clean json we get back from IMDB, because its not actually json...
 function clean( json ) {
   let res = json;
   res = res.substr( res.indexOf( '(' ) + 1 );
   res = res.slice( 0, -1 );
   return JSON.parse( res );
+}
+
+// make result tiles link out to the corresponding imdb page
+function getURL( id ) {
+  const base = 'http://www.imdb.com';
+  const prefix = id.substr( 0, 2 );
+
+  switch ( prefix ) {
+    case 'nm':
+      return `${ base }/name/${ id }`;
+    case 'tt':
+    default:
+      return `${ base }/title/${ id }`;
+  }
 }
