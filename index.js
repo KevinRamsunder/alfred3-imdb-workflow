@@ -14,8 +14,8 @@ const directory = 'images';
 removeFilesFromDirectory();
 
 // user input to alfred
-// const input = alfy.input.replace( / /g, '_' );
-const input = 'star wars';
+const input = alfy.input.replace( / /g, '_' );
+// const input = 'star wars';
 
 // construct imdb autocomplete api endpoint
 const base  = 'https://v2.sg.media-imdb.com/suggests';
@@ -67,6 +67,7 @@ function getURL( id ) {
     case 'nm':
       return `${ base }/name/${ id }`;
     case 'tt':
+      return `${ base }/title/${ id }`;
     default:
       return id;
   }
