@@ -10,11 +10,11 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
-		<key>0698B7FF-256A-4220-BEEB-04BB4B9E32E2</key>
+		<key>5AFD4E0F-83BE-4D89-9CEC-4A737D06968E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>99209B50-17CD-4AC1-BC8A-83ADA20928B3</string>
+				<string>A4825086-66DD-4F48-8DE5-4904459DD7C1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,7 +43,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>99209B50-17CD-4AC1-BC8A-83ADA20928B3</string>
+			<string>A4825086-66DD-4F48-8DE5-4904459DD7C1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -57,7 +57,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>aimdb</string>
+				<string>i</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -77,7 +77,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>aimdb</string>
+				<string>alfred-imdb</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -86,7 +86,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>0698B7FF-256A-4220-BEEB-04BB4B9E32E2</string>
+			<string>5AFD4E0F-83BE-4D89-9CEC-4A737D06968E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -95,14 +95,14 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>99209B50-17CD-4AC1-BC8A-83ADA20928B3</key>
+		<key>A4825086-66DD-4F48-8DE5-4904459DD7C1</key>
 		<dict>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>0698B7FF-256A-4220-BEEB-04BB4B9E32E2</key>
+		<key>5AFD4E0F-83BE-4D89-9CEC-4A737D06968E</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
