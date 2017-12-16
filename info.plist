@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>imdb</string>
 	<key>bundleid</key>
 	<string>com.kevinramsunder.imdb</string>
 	<key>category</key>
@@ -24,8 +22,14 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string>search imdb</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>imdb</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -52,6 +56,8 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -95,13 +101,6 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>A4825086-66DD-4F48-8DE5-4904459DD7C1</key>
-		<dict>
-			<key>xpos</key>
-			<integer>150</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>5AFD4E0F-83BE-4D89-9CEC-4A737D06968E</key>
 		<dict>
 			<key>xpos</key>
@@ -109,6 +108,15 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>A4825086-66DD-4F48-8DE5-4904459DD7C1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
+	<key>webaddress</key>
+	<string></string>
 </dict>
 </plist>
