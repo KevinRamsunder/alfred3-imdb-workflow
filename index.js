@@ -14,8 +14,8 @@ const directory = 'images';
 removeFilesFromDirectory();
 
 // user input to alfred
-const input = alfy.input.replace( / /g, '_' );
-// const input = 'robot';
+// const input = alfy.input.replace( / /g, '_' );
+const input = 'star wars';
 
 // construct imdb autocomplete api endpoint
 const base  = 'https://v2.sg.media-imdb.com/suggests';
@@ -68,7 +68,7 @@ function getURL( id ) {
       return `${ base }/name/${ id }`;
     case 'tt':
     default:
-      return `${ base }/title/${ id }`;
+      return id;
   }
 }
 
@@ -80,7 +80,7 @@ function generateIcon( src = '', id ) {
   const croppedSrc = src.replace( '@._V1_.jpg', '@._V1._SX40_CR0,0,40,54_.jpg' );
 
   // construct a filename from the movie/actor/whatever id
-  const fileName = `${ directory }/${ id }.jpg`;
+  const fileName = `${ directory }/${ id.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'_') }.jpg`;
 
   // request the image buffer
   request.get( { url: croppedSrc, encoding: null }, ( requestErr, res, buffer ) => {
