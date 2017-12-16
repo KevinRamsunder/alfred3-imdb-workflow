@@ -1,24 +1,38 @@
 {
   "name": "alfred-imdb",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "because the ones i found don't work",
-  "main": "index.js",
-  "dependencies": {
-    "alfy": "^0.7.0"
+  "license": "MIT",
+  "repository": "kevinramsunder/alfred-imdb",
+  "author": {
+    "name": "Kevin Ramsunder",
+    "email": "kevinramsunder4@gmail.com",
+    "url": "kevinramsunder.com"
   },
-  "devDependencies": {},
+  "engines": {
+    "node": ">=4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KevinRamsunder/alfred3-imdb-workflow.git"
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KevinRamsunder/alfred3-imdb-workflow/issues"
-  },
-  "homepage": "https://github.com/KevinRamsunder/alfred3-imdb-workflow#readme"
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
 }
