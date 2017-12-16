@@ -1,0 +1,24 @@
+{
+  "name": "alfred-imdb",
+  "version": "1.0.0",
+  "description": "because the ones i found don't work",
+  "main": "index.js",
+  "dependencies": {
+    "alfy": "^0.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinRamsunder/alfred3-imdb-workflow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinRamsunder/alfred3-imdb-workflow/issues"
+  },
+  "homepage": "https://github.com/KevinRamsunder/alfred3-imdb-workflow#readme"
+}
