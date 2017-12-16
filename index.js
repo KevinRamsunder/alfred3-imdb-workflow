@@ -9,7 +9,7 @@ const directory = 'images';
 
 // this script gets called a bunch of times, and our cache of stored
 // images will grow really, really fast. This function will remove all
-// previously cached images upon execution, so the folder will only contain]
+// previously cached images upon execution, so the folder will only contain
 // new images for the latest query.
 removeFilesFromDirectory();
 
@@ -98,6 +98,9 @@ function removeFilesFromDirectory() {
 
     // delete every single one of em
     files.forEach( ( file ) => {
+      // except the readme
+      if ( file.includes( 'readme' ) ) return;
+
       fs.unlink( path.join( directory, file ), ( err ) => {
         if ( err ) return;
       } )
