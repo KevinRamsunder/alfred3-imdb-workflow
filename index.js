@@ -29,7 +29,7 @@ https.get( endpoint, ( res ) => {
       items = cleanedData.d.map( ( d ) => {
         return {
           title: d.l,
-          subtitle: d.q,
+          subtitle: [ d.y, d.s ].filter( ( i ) => i ).join( ' - ' ),
           arg: getURL( d.id ),
         };
       } );
