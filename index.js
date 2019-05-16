@@ -14,7 +14,7 @@ const directory = 'images';
 removeFilesFromDirectory();
 
 // user input to alfred
-const input = alfy.input.replace( / /g, '_' );
+const input = alfy.input.replace( / /g, '_' ).toLowerCase();
 // const input = 'star wars';
 
 // construct imdb autocomplete api endpoint
